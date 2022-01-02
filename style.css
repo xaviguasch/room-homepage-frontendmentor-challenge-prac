@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ================== */
+/* Custom properties */
+/* ================== */
+
+:root {
+  --ff-main: 'Public Sans', sans-serif;
+
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-bold: 700;
+
+  --fs-07: 0.438rem;
+  --fs-08: 0.5em;
+  --fs-09: 0.563em;
+  --fs-10: 0.625rem;
+  --fs-12: 0.75rem;
+  --fs-13: 0.813rem;
+  --fs-14: 0.875rem;
+  --fs-15: 0.938rem;
+  --fs-16: 1rem;
+  --fs-18: 1.125rem;
+  --fs-20: 1.25rem;
+  --fs-22: 1.375rem;
+  --fs-24: 1.5rem;
+  --fs-26: 1.625rem;
+  --fs-28: 1.75rem;
+  --fs-30: 1.875em;
+  --fs-32: 2rem;
+  --fs-36: 2.25rem;
+  --fs-40: 2.5rem;
+  --fs-48: 3rem;
+  --fs-56: 3.5rem;
+  --fs-60: 3.75rem;
+  --fs-64: 4rem;
+  --fs-72: 4.5rem;
+  --fs-80: 5rem;
+
+  /* Primary */
+
+  --clr-dark-blue: hsl(233, 26%, 24%);
+  --clr-lime-green: hsl(136, 65%, 51%);
+  --clr-bright-cyan: hsl(192, 70%, 51%);
+
+  /* Neutral  */
+
+  --clr-grayish-blue: hsl(233, 8%, 62%);
+  --clr-light-grayish-blue: hsl(220, 14%, 96%);
+  --clr-very-light-gray: hsl(0, 0%, 98%);
+  --clr-white: hsl(0, 0%, 100%);
+
+  --clr-black-bg: hsla(228, 13%, 13%, 0.1);
+  --clr-black-bg-2: hsla(228, 13%, 13%, 0.8);
+}
+
+body {
+  background-color: var(--clr-white);
+  color: var(--clr-dark-blue);
+  font-family: var(--ff-main);
+  font-size: var(--fs-16);
+  font-weight: var(--fw-regular);
+  line-height: 1.555;
+  text-align: center;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* ================== */
+/* Typography */
+/* ================== */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
