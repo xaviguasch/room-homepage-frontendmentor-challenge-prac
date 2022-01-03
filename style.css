@@ -94,15 +94,46 @@ img {
   font-size: var(--fs-12);
 }
 
+.footer__text {
+  font-size: var(--fs-10);
+}
+
+.btn--main {
+}
+
 /* ================== */
 /* Links */
 /* ================== */
+.nav-item-link {
+  color: var(--clr-black-text);
+  font-weight: var(--fw-semi-bold);
+  text-decoration: none;
+  font-size: var(--fs-12);
+}
 
 /* ================== */
 /* Buttons & inputs */
 /* ================== */
 .btn {
   cursor: pointer;
+}
+
+.btn--main {
+  border: none;
+  background: transparent;
+  font-family: inherit;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+.btn--arrow {
+  background: var(--clr-black-bg);
+  padding: 0.9em 1.25em;
+  border: none;
+}
+
+.arrow-svg {
+  transform: scale(0.75);
 }
 
 /* ================== */
