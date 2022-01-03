@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap');
 *,
 *::before,
 *::after {
@@ -13,11 +12,12 @@
 /* ================== */
 
 :root {
-  --ff-main: 'Public Sans', sans-serif;
+  --ff-main: 'Spartan', sans-serif;
 
-  --fw-light: 300;
-  --fw-regular: 400;
+  /* --fw-light: 300;
+  --fw-regular: 400; */
   --fw-medium: 500;
+  --fw-semi-bold: 600;
   --fw-bold: 700;
 
   --fs-07: 0.438rem;
@@ -46,31 +46,25 @@
   --fs-72: 4.5rem;
   --fs-80: 5rem;
 
-  /* Primary */
+  /* Text */
+  --clr-black-text: hsla(0, 0%, 0%, 1);
+  --clr-white-text: hsla(0, 0%, 100%, 1);
+  --clr-grey-text: hsla(0, 0%, 63%, 1);
 
-  --clr-dark-blue: hsl(233, 26%, 24%);
-  --clr-lime-green: hsl(136, 65%, 51%);
-  --clr-bright-cyan: hsl(192, 70%, 51%);
-
-  /* Neutral  */
-
-  --clr-grayish-blue: hsl(233, 8%, 62%);
-  --clr-light-grayish-blue: hsl(220, 14%, 96%);
-  --clr-very-light-gray: hsl(0, 0%, 98%);
-  --clr-white: hsl(0, 0%, 100%);
-
-  --clr-black-bg: hsla(228, 13%, 13%, 0.1);
-  --clr-black-bg-2: hsla(228, 13%, 13%, 0.8);
+  /* Background  */
+  --clr-black-bg: hsla(0, 0%, 0%, 1);
+  --clr-white-bg: hsla(0, 0%, 100%, 1);
+  --clr-dark-grey-bg: hsla(0, 0%, 27%, 1);
 }
 
 body {
-  background-color: var(--clr-white);
-  color: var(--clr-dark-blue);
+  background-color: var(--clr-white-bg);
+  color: var(--clr-grey-text);
   font-family: var(--ff-main);
   font-size: var(--fs-16);
-  font-weight: var(--fw-regular);
-  line-height: 1.555;
-  text-align: center;
+  font-weight: var(--fw-medium);
+  line-height: 1.666;
+  text-align: left;
 }
 
 img {
@@ -80,6 +74,16 @@ img {
 
 /* ================== */
 /* Typography */
+/* ================== */
+
+/* ================== */
+/* ================== */
+/* ================== */
+/* ================== */
+/* ================== */
+/* ================== */
+/* ================== */
+/* ================== */
 /* ================== */
 
 .attribution {
