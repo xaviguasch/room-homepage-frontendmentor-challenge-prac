@@ -75,6 +75,45 @@ img {
 /* ================== */
 /* Typography */
 /* ================== */
+.title {
+  font-weight: var(--fw-semi-bold);
+  color: var(--clr-black-text);
+  font-size: var(--fs-28);
+  line-height: 1.12;
+}
+
+.sm-title {
+  text-transform: uppercase;
+  color: var(--clr-black-text);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-12);
+  letter-spacing: 5px;
+}
+
+.text {
+  font-size: var(--fs-12);
+}
+
+/* ================== */
+/* Links */
+/* ================== */
+
+/* ================== */
+/* Buttons & inputs */
+/* ================== */
+.btn {
+  cursor: pointer;
+}
+
+/* ================== */
+/* Utility styles */
+/* ================== */
+
+/* ================== */
+/* SECTIONS */
+/* ================== */
+
+/* HEADER */
 
 /* ================== */
 /* ================== */
@@ -86,6 +125,7 @@ img {
 /* ================== */
 /* ================== */
 
+/* FOOTER */
 .attribution {
   font-size: 11px;
   text-align: center;
