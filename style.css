@@ -141,11 +141,12 @@ img {
 /* ================== */
 /* Utility styles */
 /* ================== */
-.container {
-  padding: 0 2em;
-}
 
 #title--active {
+  display: block;
+}
+
+#text--active {
   display: block;
 }
 
@@ -176,7 +177,11 @@ img {
 }
 
 /* MAIN */
-.main .title {
+.main-copy .title {
+  display: none;
+}
+
+.main-copy .text {
   display: none;
 }
 
@@ -196,6 +201,20 @@ img {
 
 .grid-b {
   position: relative;
+
+  padding: 4.5em 2em;
+}
+
+.grid-b .text {
+  margin-top: 0.875em;
+}
+
+.btn--main {
+  margin-top: 3.25em;
+}
+
+.icon-arrow {
+  margin-left: 1em;
 }
 
 .slider-buttons {
@@ -205,6 +224,26 @@ img {
   transform: translateY(-100%);
 
   display: flex;
+}
+
+.grid-c {
+  background: url('./images/image-about-dark.jpg');
+  background-size: contain;
+  height: 238px;
+}
+
+.grid-d {
+  padding: 3.5em 2em;
+}
+
+.grid-e {
+  background: url('./images/image-about-light.jpg');
+  background-size: contain;
+  height: 227px;
+}
+
+.secondary-copy .text {
+  margin-top: 0.5em;
 }
 
 /* ================== */
