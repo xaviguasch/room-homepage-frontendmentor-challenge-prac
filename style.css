@@ -116,6 +116,10 @@ img {
   font-size: var(--fs-12);
 }
 
+.footer__text a {
+  color: var(--clr-white-bg);
+}
+
 /* ================== */
 /* Buttons & inputs */
 /* ================== */
@@ -141,6 +145,9 @@ img {
 /* ================== */
 /* Utility styles */
 /* ================== */
+.wrapper {
+  position: relative;
+}
 
 #title--active {
   display: block;
@@ -246,21 +253,14 @@ img {
   margin-top: 0.5em;
 }
 
-/* ================== */
-/* ================== */
-/* ================== */
-/* ================== */
-/* ================== */
-/* ================== */
-/* ================== */
-/* ================== */
-/* ================== */
-
 /* FOOTER */
-.attribution {
-  font-size: 11px;
-  text-align: center;
+.footer {
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
 }
-.attribution a {
-  color: hsl(228, 45%, 44%);
+
+.footer__text {
+  color: var(--clr-black-text);
+  text-align: center;
 }
