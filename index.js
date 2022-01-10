@@ -2,9 +2,15 @@ const sliderBtnLeft = document.getElementById('slider-btn-left')
 const sliderBtnRight = document.getElementById('slider-btn-right')
 const copyBlocks = document.querySelectorAll('.copy-block')
 
-const rotatingImg = document.querySelector('.grid-a')
+const rotatingImgMobile = document.querySelector('.grid-a__mobile-container')
+const rotatingImgDesktop = document.querySelector('.grid-a__desktop-container')
 
-const topImgs = [
+const topImgsMobile = [
+  './images/mobile-image-hero-1.jpg',
+  './images/mobile-image-hero-2.jpg',
+  './images/mobile-image-hero-3.jpg',
+]
+const topImgsDesktop = [
   './images/desktop-image-hero-1.jpg',
   './images/desktop-image-hero-2.jpg',
   './images/desktop-image-hero-3.jpg',
@@ -17,7 +23,8 @@ const showSlide = (currentSlide) => {
     cp.classList.add('hidden')
   })
   copyBlocks[currentSlide].classList.remove('hidden')
-  rotatingImg.style.backgroundImage = `url(${topImgs[currentSlide]})`
+  rotatingImgMobile.style.backgroundImage = `url(${topImgsMobile[currentSlide]})`
+  rotatingImgDesktop.style.backgroundImage = `url(${topImgsDesktop[currentSlide]})`
 }
 
 showSlide(currentSlide)
