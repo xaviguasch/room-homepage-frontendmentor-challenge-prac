@@ -117,7 +117,7 @@ img {
 }
 
 .footer__text a {
-  color: var(--clr-white-text);
+  color: var(--clr-grey-text);
 }
 
 /* ================== */
@@ -154,14 +154,22 @@ img {
 }
 
 .img {
+  /* Hack to have the image occupy the whole div while keeping the proportions */
   min-width: 100%;
   min-height: 100%;
-  width: auto;
-  height: auto;
 }
 
 .img--desktop {
   display: none;
+}
+
+/* Mondal nav utilities */
+body {
+  position: unset;
+}
+
+body.nav-open {
+  position: fixed;
 }
 
 /* ================== */
@@ -169,6 +177,7 @@ img {
 /* ================== */
 
 /* HEADER */
+
 .nav-buttons {
   position: absolute;
   top: 48px;
@@ -183,6 +192,14 @@ img {
 }
 
 .nav-buttons__close-icon {
+  display: none;
+}
+
+.active .nav-buttons__close-icon {
+  display: block;
+}
+
+.active .nav-buttons__open-icon {
   display: none;
 }
 
@@ -309,7 +326,9 @@ img {
     grid-row-end: 2;
 
     grid-column-start: 7;
-    grid-column-end: 10;
+    grid-column-end: 11;
+
+    padding: 5.5em 3.4em 0em;
   }
 
   .grid-c {

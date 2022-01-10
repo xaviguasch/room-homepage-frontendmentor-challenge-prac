@@ -5,6 +5,10 @@ const copyBlocks = document.querySelectorAll('.copy-block')
 const imgMobile = document.querySelector('.img--mobile')
 const imgDesktop = document.querySelector('.img--desktop')
 
+const headWrapper = document.querySelector('.header-inner-wrapper')
+const navBtns = document.querySelector('.nav-buttons')
+const body = document.querySelector('body')
+
 const topImgsMobile = [
   './images/mobile-image-hero-1.jpg',
   './images/mobile-image-hero-2.jpg',
@@ -55,4 +59,10 @@ sliderBtnLeft.addEventListener('click', () => {
 
 sliderBtnRight.addEventListener('click', () => {
   goToNextSlide()
+})
+
+// Modal navigation
+navBtns.addEventListener('click', () => {
+  headWrapper.classList.toggle('active')
+  body.classList.toggle('nav-open')
 })
