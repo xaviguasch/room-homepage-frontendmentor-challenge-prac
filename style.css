@@ -153,6 +153,13 @@ img {
   display: none;
 }
 
+.img {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+}
+
 .img--desktop {
   display: none;
 }
