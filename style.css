@@ -475,11 +475,13 @@ body.nav-open {
 
   .slider-buttons {
     position: absolute;
+    top: unset;
     bottom: 0;
     left: 0;
-    transform: translateY(0%);
+    transform: unset;
 
     display: flex;
+    justify-content: flex-start;
     align-items: flex-end;
   }
 
