@@ -184,6 +184,11 @@ body.nav-open {
   left: 24px;
 }
 
+.active .nav-buttons {
+  top: 46px;
+  z-index: 50;
+}
+
 .logo {
   position: absolute;
   top: 48px;
@@ -203,8 +208,35 @@ body.nav-open {
   display: none;
 }
 
-.navbar {
+.active .logo {
   display: none;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--clr-white-bg);
+  text-align: center;
+  opacity: 0;
+  transform-origin: top;
+  transform: translateY(-100px);
+  transition: transform 350ms ease-in-out;
+}
+
+.active .navbar {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2em;
+  list-style: none;
+
+  padding: 2.5em 1.5em;
 }
 
 /* MAIN */
