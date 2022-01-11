@@ -366,6 +366,16 @@ body.nav-open {
     font-size: var(--fs-12);
   }
 
+  /* LINKS */
+  .nav-item-link {
+    color: var(--clr-white-text);
+  }
+
+  .nav-item-link:hover:after,
+  .nav-item-link:focus:after {
+    border-bottom: 2px solid var(--clr-white-text);
+  }
+
   /* UTILITY STYLES */
   .img--mobile {
     display: none;
@@ -375,9 +385,68 @@ body.nav-open {
     display: block;
   }
 
+  /* It unstucks the scrolling if the user goes to desktop while the modal is still open */
+  body.nav-open {
+    position: unset;
+  }
+
   /* SECTIONS */
 
   /* Header */
+
+  .header-inner-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3.5em;
+    background: transparent;
+    width: 100%;
+    padding-left: 4em;
+  }
+
+  .active .logo,
+  .logo {
+    position: unset;
+    top: unset;
+    left: unset;
+    transform: unset;
+
+    display: block;
+
+    background: unset;
+    order: 0;
+  }
+
+  .nav-buttons {
+    display: none;
+  }
+
+  .navbar {
+    position: unset;
+    top: unset;
+    left: unset;
+    width: unset;
+    height: unset;
+
+    background: unset;
+
+    text-align: center;
+    opacity: 1;
+
+    transform-origin: top;
+    transform: unset;
+    transition: unset;
+  }
+
+  .nav-items {
+    justify-content: flex-start;
+
+    background: transparent;
+  }
 
   /* Main */
   .main__grid {
@@ -402,6 +471,16 @@ body.nav-open {
     grid-column-end: 11;
 
     padding: 5.5em 3.4em 0em;
+  }
+
+  .slider-buttons {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(0%);
+
+    display: flex;
+    align-items: flex-end;
   }
 
   .grid-c {
