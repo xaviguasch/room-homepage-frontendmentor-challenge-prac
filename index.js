@@ -8,6 +8,7 @@ const imgDesktop = document.querySelector('.img--desktop')
 const headWrapper = document.querySelector('.header-inner-wrapper')
 const navBtns = document.querySelector('.nav-buttons')
 const body = document.querySelector('body')
+const navItemLinks = document.querySelectorAll('.nav-item-link')
 
 const topImgsMobile = [
   './images/mobile-image-hero-1.jpg',
@@ -65,4 +66,12 @@ sliderBtnRight.addEventListener('click', () => {
 navBtns.addEventListener('click', () => {
   headWrapper.classList.toggle('active')
   body.classList.toggle('nav-open')
+})
+
+// Hides the navigation if a link is clicked
+navItemLinks.forEach((item) => {
+  item.addEventListener('click', () => {
+    body.classList.remove('nav-open')
+    headWrapper.classList.remove('active')
+  })
 })

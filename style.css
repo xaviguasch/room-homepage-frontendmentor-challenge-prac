@@ -114,6 +114,23 @@ img {
   font-weight: var(--fw-semi-bold);
   text-decoration: none;
   font-size: var(--fs-12);
+
+  padding-bottom: 0.5em;
+
+  position: relative;
+}
+
+.nav-item-link:hover:after,
+.nav-item-link:focus:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-bottom: 0.35em;
+
+  border-bottom: 2px solid var(--clr-black-text);
+  width: 16px;
 }
 
 .footer__text a {
