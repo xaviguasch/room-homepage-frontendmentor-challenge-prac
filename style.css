@@ -376,6 +376,11 @@ body.nav-open {
     border-bottom: 2px solid var(--clr-white-text);
   }
 
+  /* BUTTONS */
+  .btn--arrow {
+    padding: 1.4em 2em;
+  }
+
   /* UTILITY STYLES */
   .img--mobile {
     display: none;
@@ -507,5 +512,12 @@ body.nav-open {
 
     grid-column-start: 8;
     grid-column-end: 11;
+  }
+}
+
+@media (min-width: 1400px) {
+  .wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
   }
 }
